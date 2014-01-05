@@ -1,0 +1,185 @@
+<!-- 
+	Installieren mit:
+    http://phonegap.com/developer/
+    
+    https://build.phonegap.com/apps
+ -->
+
+<!DOCTYPE html>
+<!--[if IEMobile 7 ]>    <html class="no-js iem7"> <![endif]-->
+<!--[if (gt IEMobile 7)|!(IEMobile)]><!--> <html class="no-js"> <!--<![endif]-->
+    <head>
+        <meta charset="utf-8">
+        <title></title>
+        <meta name="description" content="">
+        <meta name="HandheldFriendly" content="True">
+        <meta name="MobileOptimized" content="320">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta http-equiv="cleartype" content="on">
+
+        <link rel="apple-touch-icon-precomposed" sizes="144x144" href="img/touch/apple-touch-icon-144x144-precomposed.png">
+        <link rel="apple-touch-icon-precomposed" sizes="114x114" href="img/touch/apple-touch-icon-114x114-precomposed.png">
+        <link rel="apple-touch-icon-precomposed" sizes="72x72" href="img/touch/apple-touch-icon-72x72-precomposed.png">
+        <link rel="apple-touch-icon-precomposed" href="img/touch/apple-touch-icon-57x57-precomposed.png">
+        <link rel="shortcut icon" href="img/touch/apple-touch-icon.png">
+
+        <!-- Tile icon for Win8 (144x144 + tile color) -->
+        <meta name="msapplication-TileImage" content="img/touch/apple-touch-icon-144x144-precomposed.png">
+        <meta name="msapplication-TileColor" content="#222222">
+
+
+        <!-- For iOS web apps. Delete if not needed. https://github.com/h5bp/mobile-boilerplate/issues/94 -->
+        <!--
+        <meta name="apple-mobile-web-app-capable" content="yes">
+        <meta name="apple-mobile-web-app-status-bar-style" content="black">
+        <meta name="apple-mobile-web-app-title" content="">
+        -->
+
+        <!-- This script prevents links from opening in Mobile Safari. https://gist.github.com/1042026 -->
+        <!--
+        <script>(function(a,b,c){if(c in b&&b[c]){var d,e=a.location,f=/^(a|html)$/i;a.addEventListener("click",function(a){d=a.target;while(!f.test(d.nodeName))d=d.parentNode;"href"in d&&(d.href.indexOf("http")||~d.href.indexOf(e.host))&&(a.preventDefault(),e.href=d.href)},!1)}})(document,window.navigator,"standalone")</script>
+        -->
+
+        <link rel="stylesheet" href="css/normalize.css"> 
+        <link rel="stylesheet" href="css/main.css">
+        <script src="js/vendor/modernizr-2.6.2.min.js"></script>
+    </head>
+    <body id="jcs-mobile-app">   
+        <header>
+        	<button onclick="showAside();">
+            	<img src="img/info-i.png" width="25" height="25">
+            </button>
+            <small>
+            	JCS' first mobile app 
+            </small>
+        </header>
+        <section id="wrapper">
+            <div id="scroller">
+                <ul id="thelist">       
+                    <li>
+                    	<h3>Hello World!</h3>
+                        Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt
+                        ut labore et dolore magna aliquyam erat, sed diam voluptua. 
+                    </li>
+                    <li>
+                    	<h3>An example image</h3>
+                       	<img src="http://lorempixel.com/400/400/" alt="Lorempixel">   
+                    </li>
+                    <li>
+                    	<h3>Form test</h3>
+                    	<form id="formtest">
+                        	<fieldset>
+                                <label>Text - Lorem ipsum dolor sit amet</label><br>
+                                <input type="text" placeholder="Enter some text ...">
+                            </fieldset>
+                            <fieldset>
+                                <label>Phone number</label><br>
+                                <input type="tel" placeholder="0160 / XXX XXX XXX">
+                            </fieldset>
+                            <button onclick="alert('Form action');">Submit the test form</button>
+                        </form>
+                    </li>
+                    <li>
+                    	<h3>Pretty much text...</h3>
+                        Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt
+                        ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores
+                        et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.
+                        Lorem ipsum dolor sit amet, consetetur sadipscing elitr.
+                    </li>
+					<li>
+                    	<!-- http://stackoverflow.com/questions/1711078/html5-video-element-on-android -->
+                        <h3>Awesome video</h3>
+                        <video id="my-video" autobuffer height="180" width="320" poster="http://lorempixel.com/320/180/" controls>
+                        	<source src="http://www.jan-christoph-sievers.de/mobile-test/img/synergy2.mp4" type="video/mp4" />
+                        </video>
+                    </li>
+                </ul>
+            </div>
+        </section>
+        
+        <aside id="aside" class="fadeOut">
+        	<form id="search">
+                <input type="search" placeholder="Search keyword" style="border: 1px solid #000;">
+            	<button>Go !</button>
+            </form>
+            <section id="info-bar">
+            <div id="info-bar-scroller">
+                <table style="width: 100%;">
+                	<tr>
+                    	<td width="90">
+                        	<img src="https://fbcdn-sphotos-c-a.akamaihd.net/hphotos-ak-prn1/72937_10151282203959221_563375763_n.jpg" width="80" height="80">
+                        </td>
+                        <td style="font-size: 16px;">
+                        	Lorem ipsum dolor sit amet, consetetur sadipscing elitr
+                        </td>
+                    </tr>
+                </table>
+                
+                <h3>Apps</h3>
+                <ul>
+                	<li class="icon-config">
+                    	<a href="#" 
+                           style="background: transparent url('http://lorempixel.com/27/27/?1') no-repeat left center;"
+                           onclick="alert('Click');">
+                               Lorem ipsum dolor
+                        </a>
+                    </li>
+                    <li class="icon-config">
+                    	<a href="#" 
+                           style="background: transparent url('http://lorempixel.com/27/27/?2') no-repeat left center;"
+                           onclick="alert('Click');">
+                               Consetetur sadipscing
+                        </a>
+                    </li>
+                    <li>
+                    	<a href="#" 
+                           style="background: transparent url('http://lorempixel.com/27/27/?3') no-repeat left center;"
+                           onclick="alert('Click');">
+                               Sed diam voluptua
+                        </a>
+                    </li>
+                    <li>
+                    	<a href="#" 
+                           style="background: transparent url('http://lorempixel.com/27/27/?4') no-repeat left center;"
+                           onclick="alert('Click');">
+                               Ipsum lorem 
+                        </a>
+                    </li>
+                    <li>
+                    	<a href="#" 
+                           style="background: transparent url('http://lorempixel.com/27/27/?5') no-repeat left center;"
+                           onclick="alert('Click');">
+                               Dolores etea rebum
+                        </a>
+                    </li>
+                </ul>
+                
+                <h3>Profile data</h3>
+                <ul>
+                	<li>
+                    	<a href="#" 
+                           style="background: transparent url('http://lorempixel.com/27/27/?99') no-repeat left center;"
+                           onclick="alert('Click');">
+                               Lorem ipsum voluptua
+                        </a>
+                    </li>
+                
+                </ul>
+                <button onclick="hideAside();">Close</button>
+                <br><br><br>
+            </div>
+            </section>     
+        </aside>
+            
+        <footer>
+            <p>
+            	Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore. 
+            </p>
+       	</footer>
+        
+        <!-- Main app script at the end of the body -->
+        <script src="js/vendor/iscroll-lite.js"></script>
+        <script src="js/helper.js"></script>
+        <script src="js/main.js"></script>
+    </body>
+</html>
